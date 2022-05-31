@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+ <title>DisecTube</title>
+  <meta charset="utf-8">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Tab Styles Inspiration</title>
+		
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
+		<link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
+  		<script src="js/modernizr.custom.js"></script>
+		<head>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="bootstrap.min.js"></script>
+  <script src="bootstrap-slider.js"></script>
+  <script src="bootstrap-slider.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
+ <script src="d3.v3.min.js"></script>
+<script src="d3.layout.cloud.js"></script>
+
+  <script src="jquery.min.js"></script>
+  
+	</head>
+	<body>
+		<svg class="hidden">
+			<defs>
+				<path id="tabshape" d="M80,60C34,53.5,64.417,0,0,0v60H80z"/>
+			</defs>
+		</svg>
+		<div class="container">
+			
+			
+				<div class="tabs tabs-style-tzoid">
+					<nav>
+						<ul>
+							<li><a href="#section-tzoid-1" class="icon icon-home"><span>Home</span></a></li>
+							<li><a href="#section-tzoid-2" class="icon icon-box"><span>Archive</span></a></li>
+							<li><a href="#section-tzoid-3" class="icon icon-upload"><span>Upload</span></a></li>
+							<li><a href="#section-tzoid-4" class="icon icon-display"><span>Analytics</span></a></li>
+							
+						</ul>
+					</nav>
+					<div class="content-wrap">
+						<section id="section-tzoid-1">
+						  
+						  <div class="col_1">
+
+
+						<button type="button" class="btn btn-default btn-sm" id="back" style="background-color:#00aabb;" >
+          <span class="glyphicon glyphicon-step-backward"></span> Back
+     </button>
+    <input type="text" id="userInput" />
+     <button type="button" class="btn btn-default" id="buttonClick" style="background-color:#00aabb;">
+      <span class="glyphicon glyphicon-search"></span> Search
+    </button>
+	
+    </div>
+	
+
+	<div class="container" id="container">
+	<div style="text-align: center;"><img src="6.gif" width="40" height="40" align="middle"></div>
+	</div>
+						</section>
+						<section id="section-tzoid-2">
+						<div class="col_3">
+	  
+	  <input id="ex8" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="10" data-slider-value="10"/>
+		<button type="button" class="btn btn-default" id="buttonClick2" style="background-color:#00aabb;">
+       Select
+    </button>
+</div>
+<div class="container" id="container1">
+
+</div>
+						</section>
+						<section id="section-tzoid-3">
+						 <div class="col_4">
+    <input type="text" id="userInput1" />
+     <button type="button" class="btn btn-info" id="title"  >Title</button>
+	<button type="button" class="btn btn-info" id="description">Description</button>
+	<button type="button" class="btn btn-info" id="subs" >Subtitles</button>
+	
+    </div>
+	<br/>
+	 
+<div class="container" id="container2">
+	
+	</div>
+						</section>
+						<section id="section-tzoid-4">
+						<div class="col_5">
+ <button type="button" class="btn btn-info" id="cloud" >Generate word cloud</button>
+ </div>
+
+<div class="container" id="container3"></div>
+						</section>
+						
+					</div><!-- /content -->
+				</div><!-- /tabs -->
+				
+			
+			
+		</div><!-- /container -->
+		<script src="js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>
+	</body>
+</html>

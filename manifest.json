@@ -1,0 +1,32 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 3,
+
+  
+"name": "YTSummarizer",
+ 
+"permissions":["tabs", "activeTab"], 
+
+"description":"An extension to provide a summarized transcript of a YouTube Subtitle eligible Video.",
+  
+"version": "1.0",
+
+  
+"background.service_worker":  ["popup.js","jquery.min.js","bootstrap.min.js"],
+
+
+	
+"icons": { 
+                "128":"logo1.png"
+            },
+
+	
+ "action": {
+   
+"default_icon": "logo.png",
+   
+"default_popup": "popup.html"
+ }
+
+}
