@@ -1,13 +1,12 @@
-from flask import Flask
-
+from flask import Flask, jsonify
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Hello, World!"
-
+    return "HhEeLlLlOoOo"
 if __name__ == '__main__':
     app.run(debug=True)
+
 from transformers import pipeline
 from youtube_transcript_api import YouTubeTranscriptApi
 youtube_video = "https://www.youtube.com/watch?v=FfhZFRvmaVY" 
@@ -24,6 +23,7 @@ print(len(result))
 summarizer = pipeline('summarization')
 num_iters = int(len(result)/2000)
 summarized_text = []
+summary = summarizer(summarized_text, max_length = 1000, min_length =  400)
 for i in range(0, num_iters + 1):
   start = 0
   start = i * 2000
